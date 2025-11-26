@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #99999;
+    background-color: #ffdddd;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@ header {
 nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     gap: 15px;
 }
@@ -34,7 +35,7 @@ nav ul {
 .destaque {
     text-align: center;
     padding: 40px;
-    background-color: #f8f3e2;
+    background-color: #fdf2f3;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -80,7 +81,7 @@ nav ul {
 .cardapio h2 {
     font-family: 'Arial', sans-serif;
     font-size: 2em;
-    color: #d2691e;
+    color: #a11e6aff;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
@@ -92,6 +93,7 @@ nav ul {
     margin-bottom: 20px;
     font-weight: bold;
     margin-top: 15px;
+    color: #a11e6aff;
 }
 
 .card {
@@ -110,22 +112,105 @@ nav ul {
 
 .card h4 {
     font-family: 'Arial', sans-serif;
-    color: #d2691e;
+    color: #d03e7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .card-food{
     width: 400px;
     height: auto;
+    
+    border: 2px solid #ffe1ee;
+    margin: 10px;
+    height: 300px;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px #b18597, 0 5px #ffe3e2;
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 
 
 footer {
-    background-color: #d2691e;
-    color: white;
+    background-color: #ffdddd;
+    color: #a11e6aff;
     text-align: center;
     padding: 10px;
 }
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #382b22;
+}
+
+
+
+
+
+.headerBTN {
+ 
+ text-transform: uppercase;
+ padding: 0.50em 1.50em 0.50em;
+ background: #fff0f0;
+ border: 2px solid #b18597;
+ border-radius: 0.50em;
+ margin-left: 25px;
+ height: 70%;
+ top: 0;
+}
+
+
+
+.headerBTN:hover {
+ background: #ffe9e9;
+ -webkit-transform: translate(0, 0.25em);
+ transform: translate(0, 0.25em);
+}
+
+.headerBTN:hover::before {
+ -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+ box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+ -webkit-transform: translate3d(0, 0.5em, -1em);
+ transform: translate3d(0, 0.5em, -1em);
+}
+
+.headerBTN:active {
+ background: #ffe9e9;
+ -webkit-transform: translate(0em, 0.75em);
+ transform: translate(0em, 0.75em);
+}
+
+.headerBTN:active::before {
+ -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+ box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+ -webkit-transform: translate3d(0, 0, -1em);
+ transform: translate3d(0, 0, -1em);
+}
+
+.logo{
+    width: 200%;
+    margin-right: 10px;
+    top:5%; 
+}
+
+.navIcon{
+    margin-right: 7px;
+}
+
+.name{
+    margin-left: 10px;
+    color: #a11e6aff;
+}
+
+.item-food{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
 
